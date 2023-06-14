@@ -31,6 +31,7 @@
   --header-hero-bg-color: #f3d7b7;
   --accent-green-color: #0a775f;
   --text-color: #333;
+  --outline-color: var(--accent-green-color);
 }
 
 /* GLOBAL */
@@ -50,9 +51,9 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  font-family: 'Arial', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family:'Roboto', 'Arial', sans-serif;
+  font-size: 22px;
+  line-height: 28px;
   color: #fff;
   margin: 0;
   padding: 0;
@@ -68,10 +69,143 @@ body {
 }
 
 *:focus {
-  outline: 2px dashed var(--accent-green-color);
+  outline: 2px dashed var(--outline-color);
   outline-offset: 4px;
+}
+
+/* BUTTON  */
+.button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  line-height: normal;
+  letter-spacing: 1px;
+  padding: 16px 24px;
+  text-decoration: none;
+}
+
+.button-green {
+  background-color: var(--accent-green-color);
 }
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+/* HEADER-HERO  */
+.header-hero-wrapper {
+  background-color: var(--header-hero-bg-color);
+  background-image: url(../img/header-hero-bg-img.jpg);
+}
+
+/* HEADER  */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 50px;
+}
+
+.header-logo-link {
+  display: flex;
+  text-decoration: none;
+}
+
+.header-logo-link:hover {
+  opacity: 0.8;
+}
+
+.header-logo-link:active {
+  opacity: 0.6;
+}
+
+.header-img {
+  width: 235px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.sitenav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.sitenav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.sitenav-link {
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.sitenav-link:hover {
+  color: var(--accent-green-color);
+  opacity: 0.8;
+}
+
+.sitenav-link:active {
+  opacity: 0.6;
+}
+
+/* HERO  */
+.hero-container {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 710px;
+  padding-right: 116px;
+  padding-left: 150px;
+  padding-top: 116px;
+}
+
+.hero-heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: normal;
+  color: #000;
+}
+
+.hero-text {
+  margin-top: 0;
+  margin-bottom: 34px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+}
+
+.hero-img-index {
+  width: 710px;
+  height: 696;
+}
+
+/* RETINA DISPLAY BG IMG  */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .header-hero-wrapper {
+    background-image: url(../img/header-hero-bg-img@2x.jpg);
+  }
 }
