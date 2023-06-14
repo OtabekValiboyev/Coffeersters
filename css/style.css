@@ -1,3 +1,10 @@
+/* CUSTOM PROPS */
+:root {
+  --header-hero-bg-color: #f3d7b7;
+  --accent-green-color: #0a775f;
+  --text-color: #333;
+}
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -32,6 +39,10 @@ body {
   margin-right: auto;
 }
 
+*:focus {
+  outline: 2px dashed var(--accent-green-color);
+  outline-offset: 4px;
+}
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
