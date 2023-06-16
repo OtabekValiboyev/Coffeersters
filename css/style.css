@@ -61,7 +61,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1480px;
+  max-width: 1440px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -197,6 +197,69 @@ body {
   height: 696;
 }
 
+
+/* INDEX-COLLECTION  */
+
+.index-collection-container {
+  background-image: url(../img/index-collection-bg.jpg);
+  padding: 50px 143px;
+}
+
+.index-collection-heading {
+  margin-top: 0;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+  line-height: normal;
+  color: #000;
+}
+
+.index-collection-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.index-collection-item {
+  display: flex;
+  align-items: center;
+}
+
+.index-collection-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.idex-collection-img {
+  width: 450px;
+  height: 375px;
+  object-fit: cover;
+}
+
+.index-collection-item-content {
+  padding-left: 117px;
+  padding-right: 117px;
+}
+
+.index-collection-item-heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--text-color);
+}
+
+.index-collection-item-text {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+  color: var(--text-color);
+}
+
+
+
 /* RETINA DISPLAY BG IMG  */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -207,5 +270,9 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
   .header-hero-wrapper {
     background-image: url(../img/header-hero-bg-img@2x.jpg);
+  }
+
+  .index-collection-container {
+    background-image: url(../img/index-collection-bg@2x.jpg);
   }
 }
