@@ -258,6 +258,81 @@ body {
   color: var(--text-color);
 }
 
+/* INDEX-US  */
+.index-us {
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.index-us-content {
+  background-image: url(../img/index-us-bg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(100% / 3  -10px);
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.index-us-heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 50px;
+  line-height: normal;
+  color: #fff;
+}
+
+.index-us-text {
+  margin-left: auto;
+  margin-right: auto;
+  width: 581px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.index-us-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.index-us-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.index-us-item {
+  width: 100%;
+  max-width: 433px;
+}
+
+.index-us-item-img {
+  width: 433px;
+  height: 500px;
+  object-fit: contain;
+  margin-bottom: 28px;
+}
+
+.index-us-item-heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: normal;
+  color: var(--text-color);
+}
+
+.index-us-item-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-color);
+}
+
 
 
 /* RETINA DISPLAY BG IMG  */
@@ -274,5 +349,9 @@ only screen and (                min-resolution: 2dppx) {
 
   .index-collection-container {
     background-image: url(../img/index-collection-bg@2x.jpg);
+  }
+
+  .index-us-content {
+    background-image: url(../img/index-us-bg@2x.jpg);
   }
 }
