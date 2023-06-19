@@ -90,6 +90,16 @@ body {
   background-color: var(--accent-green-color);
 }
 
+.button-brown:focus {
+  outline-color: #c99b67;
+}
+
+.button-brown {
+  background-color: #c99b67;
+  border-radius: 100px;
+}
+
+
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
@@ -398,7 +408,7 @@ body {
   line-height: normal;
   margin-bottom: 45px;
   color: var(--text-color);
-  content: "0"counter(how-it-works);
+  content: "0" counter(how-it-works);
 }
 
 .how-it-works-item-title {
@@ -424,14 +434,69 @@ body {
   text-align: center;
 }
 
-.button-brown:focus {
-  outline-color: #c99b67;
+/* SITE-FOOTER  */
+.site-footer {
+  padding: 65px 0;
+  background-image: url(../img/header-hero-bg-img.jpg);
 }
 
-.button-brown {
-  background-color: #c99b67;
-  border-radius: 100px;
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.header-logo-link {
+  display: flex;
+  text-decoration: none;
+}
+
+.header-img {
+  width: 235px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.sitenav-footer .sitenav-link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.footer-socials {}
+
+.scials-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.socials-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.socials-icon-link {
+  display: flex;
+}
+
+.socials-icon-link svg {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  color: var(--text-color);
+}
+
+.socials-icon-link svg:hover {
+  color: var(--accent-green-color);
+}
+
+.socials-icon-link svg:active {
+  opacity: 0.6;
+}
+
 
 
 /* RETINA DISPLAY BG IMG  */
@@ -441,7 +506,9 @@ only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
-  .header-hero-wrapper {
+
+  .header-hero-wrapper,
+  .site-footer {
     background-image: url(../img/header-hero-bg-img@2x.jpg);
   }
 
