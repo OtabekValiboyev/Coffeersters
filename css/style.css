@@ -58,6 +58,7 @@ body {
   color: #fff;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .container {
@@ -212,10 +213,32 @@ body {
 
 
 /* INDEX-COLLECTION  */
+.index-collection {
+  padding-top: 20px;
+}
 
 .index-collection-container {
+  position: relative;
   background-image: url(../img/index-collection-bg.jpg);
   padding: 50px 143px;
+}
+
+.index-collection-decoration-left-img {
+  position: absolute;
+  left: -258px;
+  top: 0;
+}
+
+.index-collection-decoration-right-img {
+  position: absolute;
+  right: -308px;
+  top: 685px;
+}
+
+.index-collection-decoration-left-light-img {
+  position: absolute;
+  bottom: 170px;
+  left: -216px;
 }
 
 .index-collection-heading {
