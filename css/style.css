@@ -206,11 +206,24 @@ body {
   color: #000;
 }
 
+.hero-img-wrapper {
+  position: relative;
+}
+
 .hero-img-index {
   width: 710px;
   height: 696px;
 }
 
+.hero-img-circle {
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  transform: rotate(-25deg);
+}
 
 /* INDEX-COLLECTION  */
 .index-collection {
