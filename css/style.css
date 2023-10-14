@@ -354,8 +354,17 @@ body {
 }
 
 .index-us-item {
+  position: relative;
   width: 100%;
   max-width: 433px;
+}
+
+.index-use-item-img-logo {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 140px;
+  height: 144px;
 }
 
 .index-us-item-img {
