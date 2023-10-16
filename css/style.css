@@ -393,12 +393,12 @@ body {
 
 
 /* HOW-IT-WORKS  */
-.how-it-works-wrapper {
+.how-it-works-container {
   position: relative;
   padding: 50px 30px;
   background-color: var(--accent-green-color);
   background-image: url(../img/how-it-works-bg.jpg);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
 
 .how-it-works-decoration-img {
@@ -422,6 +422,7 @@ body {
   padding: 0;
   list-style-type: none;
   display: flex;
+  align-items: stretch;
   margin-bottom: 60px;
   counter-reset: how-it-works;
 }
@@ -461,6 +462,7 @@ body {
 
 .how-it-works-item-wrapper {
   display: flex;
+  height: 100%;
   flex-direction: column;
   padding: 20px 20px 40px;
   background-color: #f8f8f3;
@@ -670,6 +672,64 @@ body {
   z-index: 1;
   top: -80px;
   right: 30px;
+}
+
+
+/* HEADQUARTERS */
+.headquarters-list {
+  counter-reset: none;
+}
+
+.headquarters-list .how-it-works-item::before {
+  display: none;
+}
+
+.headquarters-item::after {
+  display: none;
+}
+
+.headquarters-item-wrapper {
+  position: relative;
+  padding-top: 140px;
+}
+
+.headquarters-item-wrapper::before {
+  display: none;
+}
+
+.headquarters-item-wrapper::after {
+  position: absolute;
+  top: 45px;
+  right: 55px;
+  width: 120px;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.headquarters-item-wrapper-second,
+.headquarters-item-wrapper-third {
+  padding-top: 187px;
+}
+
+.headquarters-item-wrapper-first::after {
+  background-image: url(../img/united-kingdom.svg);
+  height: 143px;
+}
+
+.headquarters-item-wrapper-second::after {
+  background-image: url(../img/canada.svg);
+  height: 120px;
+  display: block;
+}
+
+.headquarters-item-wrapper-third::after {
+  background-image: url(../img/australia.svg);
+  height: 107px;
+}
+
+.headquarters-item-wrapper-first .how-it-works-item-text {
+  width: 100%;
+  max-width: 141px;
 }
 
 
