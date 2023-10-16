@@ -625,6 +625,53 @@ body {
   left: -195px;
 }
 
+/* QUALITY */
+.quality {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.quality-container {
+  position: relative;
+  z-index: 1;
+  padding-top: 100px;
+  padding-left: 143px;
+  padding-bottom: 118px;
+  background-image: url(../img/index-us-bg.jpg);
+  background-position-y: no-repeat;
+}
+
+.quality-heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: 397px;
+  color: #fff;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-variant: all-small-caps;
+}
+
+.quality-text {
+  width: 100%;
+  max-width: 639px;
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.quality-img {
+  position: absolute;
+  z-index: 1;
+  top: -80px;
+  right: 30px;
+}
+
 
 
 /* RETINA DISPLAY BG IMG  */
