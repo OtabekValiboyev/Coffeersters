@@ -806,7 +806,7 @@ body {
   margin-bottom: 35px;
 }
 
-.craete-link {
+.create-link {
   color: #555;
   font-size: 28px;
   font-style: normal;
@@ -816,6 +816,8 @@ body {
 }
 
 .crate-link-active {
+  padding-bottom: 5px;
+  border-bottom: 3px dashed #c99b67;
   color: #000;
 }
 
@@ -854,7 +856,7 @@ body {
 }
 
 .create-item-togler:focus {
-  outline: none ;
+  outline: none;
 }
 
 .create-item-togler:focus::before {
@@ -891,7 +893,7 @@ body {
   display: none;
 }
 
-.create-item-top--open ~ .create-item-inner {
+.create-item-top--open~.create-item-inner {
   display: flex;
 }
 
